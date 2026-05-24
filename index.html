@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leilão de Conta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login" class="center-box">
+    <h2>Login do Administrador</h2>
+    <input type="text" id="adminUser" placeholder="Usuário"><br>
+    <input type="password" id="adminPass" placeholder="Senha"><br>
+    <button onclick="loginAdmin()">Entrar</button>
+    <p id="loginMsg" class="error"></p>
+  </div>
+
+  <div id="adminPanel" class="center-box hidden">
+    <h2>Criar Leilão</h2>
+    <input type="text" id="itemDesc" placeholder="Descrição da conta"><br>
+    <input type="number" id="startBid" placeholder="Valor inicial (R$)"><br>
+    <button onclick="criarLeilao()">Criar Leilão</button>
+    <p id="adminMsg" class="success"></p>
+  </div>
+
+  <div id="leilao" class="center-box hidden">
+    <h2>Leilão de Conta</h2>
+    <div id="desc"></div>
+    <div id="maiorLance">Valor inicial: <span id="valorAtual">0</span> R$<br>Sem lances ainda.</div>
+    <input type="text" id="nickname" placeholder="Seu nome/apelido"><br>
+    <input type="number" id="valorLance" placeholder="Seu lance (R$)"><br>
+    <button onclick="enviarLance()">Dar Lance</button>
+    <p id="lanceMsg"></p>
+  </div>
+
+  <div id="adminControls" class="center-box hidden">
+    <button onclick="encerrarLeilao()">Encerrar Leilão</button>
+    <p id="encerrarMsg"></p>
+  </div>
+
+  <div id="vencedor" class="center-box hidden">
+    <h2>Leilão Encerrado!</h2>
+    <div id="winnerInfo"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
