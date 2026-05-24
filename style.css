@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+  padding: 0;
+}
+.center-box {
+  max-width: 350px;
+  background: #fff;
+  margin: 50px auto;
+  padding: 30px 20px 24px 20px;
+  box-shadow: 0 2px 12px #0002;
+  border-radius: 12px;
+  text-align: center;
+}
+input[type="text"], input[type="password"], input[type="number"] {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+button {
+  background: #2962ff;
+  color: #fff;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+button:hover {
+  background: #183bac;
+}
+.hidden { display: none; }
+.error {
+  color: #be0101;
+  margin: 6px 0 0 0;
+}
+.success {
+  color: #067a22;
+  margin: 6px 0 0 0;
+}
+#maiorLance {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+#desc {
+  font-size: 15px;
+  margin-bottom: 7px;
+  color: #1a1850;
+  font-weight: bold;
+}
